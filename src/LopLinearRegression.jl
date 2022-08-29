@@ -1,5 +1,6 @@
 module LopLinearRegression
+export LinearRegression, fit!
+include("Regressor/LinearRegression.jl")
 
-# Write your package code here.
 
 end
