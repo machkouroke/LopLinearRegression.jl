@@ -27,7 +27,7 @@ function gradient!(regressor::LinearRegression, X_train, y_train, iter::Int64)::
 	return loss_train, accuracy_train
 end
 function fit!(regressor::LinearRegression, X_train, y_train; iter::Int64=100)::Tuple{Array, Array}
-	loss_train, accuracy = gradient!(regressor, X_train, y_train, 100)
+	loss_train, accuracy = gradient!(regressor, X_train, y_train, iter)
 	return loss_train, accuracy
 end
 function predict(regressor::LinearRegression, X_test)::Array{Float32}
